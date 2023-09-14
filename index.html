@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="styles/base.css" rel="stylesheet">
+  <link href="styles/larger.css" rel="stylesheet">
+  <link href="styles/styles.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tinotenda Maumbe - WDD 230 - Web Frontend Development</title>
+  <meta name="description" content="WDD 230 - Web Frontend Development, [Your Full Name], Course Assignment Portal, Web Frontend, Development, HTML, CSS">
+  <meta name="author" content="[Your Full Name]">
+</head>
+<body>
+  <header>
+    <img src="images/tititi.png" alt="profile picture">
+    <h1>Tinotenda Maumbe</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Chamber</a></li>
+      <li><a href="#">Site Plan</a></li>
+      <li><a href="#">Form</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>WDD 230: Web Frontend Development</h2>
+    <section class="card">
+      <h3>Learning Activities</h3>
+      <ul>
+        <li><a href="#">Week 1: Layout Media Query| JS Pen</a></li>
+        <li><a href="#">Week 2</a></li>
+        <li><a href="#">Week 3</a></li>
+        <li><a href="#">Week 4</a></li>
+        <li><a href="#">Week 5</a></li>
+        <li><a href="#">Week 6</a></li>
+        <li><a href="#">Week 7</a></li>
+      </ul>
+    </section>
+    <section class="card">
+      <h3>Gweru, Zimbabwe</h3>
+      <p>(-_-): 27 F</p>
+      <p>Place Visits: 8</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="year"></span> Tinotenda Maumbe Midlands Zimbabwe</p>
+    <p id="lastModified">Flag: <img src="images/tikokato.png" alt="Flag"></p>
+  </footer>
+  <script>
+    const yearElement = document.getElementById("year");
+    const currentYear = new Date().getFullYear();
+    yearElement.textContent = currentYear;
+
+    const dateElement = document.getElementById("lastModified");
+    const lastModifiedDate = document.lastModified;
+    dateElement.textContent = "Last Modified: " + lastModifiedDate;
+  </script>
+</body>
+</html>
+
+<body>
+  <!-- Body content goes here -->
+
+  <!-- Your existing HTML content -->
+
+  <!-- Reference to getDates.js -->
+  <script src="getDates.js"></script>
+</body>
+</html>
